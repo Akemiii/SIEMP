@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SIEMP" duration-ms="198626" started-at="2020-03-09T15:32:37 BRT" finished-at="2020-03-09T15:35:56 BRT">
+    <groups>
+    </groups>
+    <test name="SIFEC" duration-ms="198626" started-at="2020-03-09T15:32:37 BRT" finished-at="2020-03-09T15:35:56 BRT">
+      <class name="br.gov.caixa.siemp.tests.SIFEC">
+        <test-method status="PASS" signature="SuiteInit()[pri:0, instance:br.gov.caixa.siemp.tests.SIFEC@2f08c4b]" name="SuiteInit" is-config="true" duration-ms="42560" started-at="2020-03-09T15:31:55 BRT" finished-at="2020-03-09T15:32:37 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteInit -->
+        <test-method status="PASS" signature="Init()[pri:0, instance:br.gov.caixa.siemp.tests.SIFEC@2f08c4b]" name="Init" is-config="true" duration-ms="10844" started-at="2020-03-09T15:32:39 BRT" finished-at="2020-03-09T15:32:50 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Init -->
+        <test-method status="FAIL" signature="CreditoRuralMassaTeste()[pri:0, instance:br.gov.caixa.siemp.tests.SIFEC@2f08c4b]" name="CreditoRuralMassaTeste" duration-ms="185041" started-at="2020-03-09T15:32:51 BRT" description="Gerar massa de teste para o crédito rural" finished-at="2020-03-09T15:35:56 BRT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: btnConsultarCpf' (tried for 35 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: btnConsultarCpf' (tried for 35 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at br.gov.caixa.siemp.utils.InternetBanking.VerificarBotaoClicavel(InternetBanking.java:132)
+at br.gov.caixa.siemp.utils.InternetBanking.ClicarBotaoInterativo(InternetBanking.java:93)
+at br.gov.caixa.siemp.helper.CreditoRuralHelper.ConsultarProponente(CreditoRuralHelper.java:42)
+at br.gov.caixa.siemp.tests.SIFEC.CreditoRuralMassaTeste(SIFEC.java:82)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: #btnConsultarCpf
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NBTITMA121815', ip: '10.0.60.95', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 1056, moz:profile: C:\Users\danilo.caixeta\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(manual), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f844ab85-9765-4c6d-8b3b-58c819644208
+*** Element info: {Using=id, value=btnConsultarCpf}
+at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreditoRuralMassaTeste -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:br.gov.caixa.siemp.tests.SIFEC@2f08c4b]" name="TearDown" is-config="true" duration-ms="1" started-at="2020-03-09T15:35:56 BRT" finished-at="2020-03-09T15:35:56 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="SuiteTearDown()[pri:0, instance:br.gov.caixa.siemp.tests.SIFEC@2f08c4b]" name="SuiteTearDown" is-config="true" duration-ms="3028" started-at="2020-03-09T15:35:56 BRT" finished-at="2020-03-09T15:35:59 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteTearDown -->
+      </class> <!-- br.gov.caixa.siemp.tests.SIFEC -->
+    </test> <!-- SIFEC -->
+  </suite> <!-- SIEMP -->
+</testng-results>

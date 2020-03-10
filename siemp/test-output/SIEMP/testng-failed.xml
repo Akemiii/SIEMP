@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SIEMP]">
+  <test thread-count="5" name="SIFEC(failed)">
+    <classes>
+      <class name="br.gov.caixa.siemp.tests.SIFEC">
+        <methods>
+          <include name="SuiteInit"/>
+          <include name="TearDown"/>
+          <include name="Init"/>
+          <include name="CreditoRuralMassaTeste"/>
+          <include name="SuiteTearDown"/>
+        </methods>
+      </class> <!-- br.gov.caixa.siemp.tests.SIFEC -->
+    </classes>
+  </test> <!-- SIFEC(failed) -->
+</suite> <!-- Failed suite [SIEMP] -->

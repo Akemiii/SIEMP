@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="SIEMP" verbose="1" >
+  <test name="SIFEC" >
+    <classes>
+    	<!--<class name="br.gov.caixa.siemp.tests.SIFEC" />-->
+    	<class name="br.gov.caixa.siemp.tests.SIEMP" />
+      	<!--<class name="br.gov.caixa.siemp.tests.Veiculos" />-->
+    </classes>
+  </test>
+</suite>
